@@ -1,6 +1,6 @@
 # React Window Observer
 
-> React window observer is a library build to facilitate the process of matching the media of your device and check the scroll direction for other purposes like showign the navbar accordingly.
+> React window observer is a library build to facilitate the process of matching the media of your device and check the scroll direction for other purposes like showing the navbar accordingly.
 
 ### Installation
 
