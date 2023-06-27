@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Direction } from './types';
 
+/** This hook will return a direction of
+ *  the current user scroll either upward or downward
+* */
 export const useScrollDirection = () => {
   const [direction, setDirection] = useState<Direction>('downwards');
   const [lastScrollPos, setlastScrollPos] = useState(0);
