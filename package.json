@@ -1,7 +1,7 @@
 {
   "name": "react-window-observer",
   "description": "A library to observe the user window scroll direction and the viewport width",
-  "version": "1.1.0",
+  "version": "1.2.2",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
