@@ -8,7 +8,7 @@
  npm i react-window-observer
 ```
 
-### Basic usage 
+### Usage 
 
 ```javascript
 import { useScrollDirection, useWindowMedia } from "react-window-observer"
