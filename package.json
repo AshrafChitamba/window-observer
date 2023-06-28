@@ -5,7 +5,7 @@
   },
   "homepage": "https://github.com/Bsc-40-20/window-observer",
   "description": "A library to observe the user window scroll direction and the viewport width",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
