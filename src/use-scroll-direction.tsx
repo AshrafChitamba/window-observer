@@ -5,7 +5,7 @@ import { Direction } from './types';
  *  the current user scroll either upward or downward
 * */
 export const useScrollDirection = () => {
-  const [direction, setDirection] = useState<Direction>('downwards');
+  const [direction, setDirection] = useState<Direction>(undefined);
   const [lastScrollPos, setlastScrollPos] = useState(0);
   
   // checking the user scroll direction

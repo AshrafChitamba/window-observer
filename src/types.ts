@@ -1,5 +1,5 @@
 // direction type
-export type Direction = "downwards" | "upwards";
+export type Direction = "downwards" | "upwards" | undefined
 
 // window type
 export type Width = number

@@ -1,9 +1,9 @@
 {
   "name": "react-window-observer",
   "repository": {
-    "url": "https://github.com/Bsc-40-20/window-observer"
+    "url": "https://github.com/AshrafChitamba/window-observer"
   },
-  "homepage": "https://github.com/Bsc-40-20/window-observer",
+  "homepage": "https://github.com/AshrafChitamba/window-observer",
   "description": "A library to observe the user window scroll direction and the viewport width",
   "version": "1.2.7",
   "license": "MIT",
