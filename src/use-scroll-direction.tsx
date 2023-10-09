@@ -3,18 +3,23 @@ import { Direction } from './types';
 
 /** This hook will return a direction of
  *  the current user scroll either upward or downward
-* */
+ * */
 export const useScrollDirection = () => {
   const [direction, setDirection] = useState<Direction>(undefined);
   const [lastScrollPos, setlastScrollPos] = useState(0);
-  
+
   // checking the user scroll direction
   const detectScrollDirection = () => {
     var currentPos = window.scrollY;
-    if (currentPos > lastScrollPos) setDirection(() => 'downwards');
-    else setDirection(() => 'upwards');
 
-    setlastScrollPos(currentPos);
+    if (currentPos > 0) {
+      if (currentPos > lastScrollPos) setDirection(() => 'downwards');
+      
+      else setDirection(() => 'upwards');
+
+      setlastScrollPos(currentPos);
+    }
+    else setDirection(() => undefined);
   };
 
   // effect for scrolling
@@ -28,4 +33,3 @@ export const useScrollDirection = () => {
 
   return direction;
 };
-
