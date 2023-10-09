@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { Direction } from './types';
 
 /** This hook will return a direction of
- *  the current user scroll either upward or downward
+ *  the current user scroll either upward 
+ * or downward or undefined if the user is 
+ * at the top of the page or page start
  * */
 export const useScrollDirection = () => {
   const [direction, setDirection] = useState<Direction>(undefined);
@@ -14,12 +16,10 @@ export const useScrollDirection = () => {
 
     if (currentPos > 0) {
       if (currentPos > lastScrollPos) setDirection(() => 'downwards');
-      
       else setDirection(() => 'upwards');
 
       setlastScrollPos(currentPos);
-    }
-    else setDirection(() => undefined);
+    } else setDirection(() => undefined);
   };
 
   // effect for scrolling
